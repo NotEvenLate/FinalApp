@@ -11,7 +11,6 @@ const config = {
     measurementId: "G-3Y9N0H9CKB"
 }
 
-
 firebase.initializeApp(config)
 
 export async function loginUser(username: string, password: string) {

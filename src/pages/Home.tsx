@@ -1,15 +1,11 @@
-import { IonButton, IonContent, IonHeader, IonImg, IonItem, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButton, IonContent, IonImg, IonPage } from '@ionic/react';
 import './Home.css';
 import logo from '../assets/logo2.jpg'
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-
-
 const Home: React.FC = () => {
   return (
-    
     <IonPage>      
       <IonContent className="ion-padding">
         <IonImg class="image" src={logo}></IonImg>

@@ -1,13 +1,8 @@
-import { IonBadge, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonContent, IonFab, IonFabButton, IonFabList, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonList, IonMenu, IonMenuButton, IonModal, IonPage, IonRow, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonFab, IonFabButton, IonFabList, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './MainPage.css';
-import logo from '../assets/logo.jpg'
-import React, { useState } from 'react';
-import { add, arrowBackCircle, arrowUpCircle, calendar, call, help, helpCircle, home, informationCircle, key, list, logoDiscord, logoFacebook, logoInstagram, logoTwitter, logoVimeo, logoYoutube, map, person, personCircle, settings, share, todayOutline } from 'ionicons/icons';
-
+import { help, home, key, logoDiscord, logoFacebook, logoInstagram, logoTwitter, settings } from 'ionicons/icons';
 
 const About: React.FC = () => {
-
 
     return (
         <IonPage>

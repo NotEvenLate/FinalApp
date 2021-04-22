@@ -1,12 +1,7 @@
-import { IonBadge, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonFab, IonFabButton, IonFabList, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonList, IonMenu, IonMenuButton, IonModal, IonPage, IonRow, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './MainPage.css';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFab, IonFabButton, IonFabList, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonList, IonModal, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import logo from '../assets/logo.jpg'
 import React, { useState } from 'react';
-import { add, arrowBackCircle, arrowUpCircle, calendar, call, help, helpCircle, home, informationCircle, key, list, logoFacebook, logoInstagram, logoTwitter, logoVimeo, logoYoutube, map, person, personCircle, settings, share, todayOutline } from 'ionicons/icons';
-
-
-
+import { add, help, home, key, settings } from 'ionicons/icons';
 
 export interface Item {
   id: number;
@@ -63,7 +58,6 @@ const MainPage: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-
 
       {items.length === 0 ? (
           <div className="container">
@@ -162,8 +156,6 @@ const MainPage: React.FC = () => {
             </IonFabButton>
           </IonFabList>
         </IonFab>
-
-        
       </IonContent>
     </IonPage>
   );

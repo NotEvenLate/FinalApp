@@ -1,6 +1,5 @@
-import { IonButton, IonContent, IonHeader, IonImg, IonInput, IonItem, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import React, {useState, useEffect } from 'react'
+import { IonButton, IonContent, IonImg, IonInput, IonPage } from '@ionic/react';
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css';
 import logo from '../assets/logo2.jpg'
@@ -12,7 +11,6 @@ const Register: React.FC = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [cpassword, setCPassword] = useState('')
-
 
     async function register() {
        if(password !== cpassword){

@@ -1,6 +1,5 @@
-import { IonButton, IonContent, IonHeader, IonImg, IonInput, IonItem, IonPage, IonRouterLink, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import React, {useState, useEffect } from 'react'
+import { IonButton, IonContent, IonImg, IonInput, IonPage} from '@ionic/react';
+import React, {useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css';
 import logo from '../assets/logo2.jpg'
@@ -11,7 +10,6 @@ const Login: React.FC = () => {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-
 
     async function login() {
         const res = await loginUser(username, password)
